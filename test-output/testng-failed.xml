@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestPage.HomePageTest">
+        <methods>
+          <include name="verifyHomePgeTitle"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestPage.HomePageTest -->
+      <class name="TestPage.LoginPageTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyTheLoginPageHeader"/>
+          <include name="afterMethod"/>
+          <include name="verifyIncorrectCredentials"/>
+        </methods>
+      </class> <!-- TestPage.LoginPageTest -->
+      <class name="TestPage.UpadateAccountTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyUpdateAccountHeader"/>
+          <include name="afterMethod"/>
+          <include name="verifyUpdateAccountValidCredentials"/>
+        </methods>
+      </class> <!-- TestPage.UpadateAccountTest -->
+      <class name="TestPage.AddAccountTest">
+        <methods>
+          <include name="verify_With_Number_FieldEmpty"/>
+          <include name="beforeMethod"/>
+          <include name="verifyTheValidAccount"/>
+          <include name="verify_With_Name_FieldEmpty"/>
+          <include name="afterMethod"/>
+          <include name="verifyAddAccHeader"/>
+          <include name="verify_with_Fund_FieldEmpty"/>
+        </methods>
+      </class> <!-- TestPage.AddAccountTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
